@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <script src="../jquery-3.3.1.min.js"></script>
+      <title>Exercice 5</title>
+    </head>
+    <body>
+      <form>
+        <label for="nom">Nom : </label><input type="text" name="nom" value="" id="nom" />
+        <label for="prenom">Prénom : </label><input type="text" name="prenom" value="" id="prenom" />
+        <button type="button" name="button" >Envoyer</button>
+      </form>
+      <script>
+        $('input').focusin(function(){//Création de la fonction  focusin pour les input
+          $(this).css('border', '1px solid green');//Quand le input est focus il a une bordure verte
+        });
+        $('input').focusout(function(){//Création de la fonction foucsout pour les input
+          $(this).css('border', '1px solid red');//Quand le input n'est pas focus il a une bordure rouge
+        });
+      </script>
+    </body>
+  </html>
