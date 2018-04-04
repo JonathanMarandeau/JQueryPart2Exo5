@@ -12,11 +12,13 @@
         <button type="button" name="button" >Envoyer</button>
       </form>
       <script>
-        $('input').focusin(function(){//Création de la fonction  focusin pour les input
-          $(this).css('border', '1px solid green');//Quand le input est focus il a une bordure verte
-        });
-        $('input').focusout(function(){//Création de la fonction foucsout pour les input
-          $(this).css('border', '1px solid red');//Quand le input n'est pas focus il a une bordure rouge
+        $(function(){
+          $('input').focusin(function(){//Création de la fonction  focusin pour les input
+            $(this).css('border', '1px solid green');//Quand le input est focus il a une bordure verte
+          });
+          $('input').focusout(function(){//Création de la fonction foucsout pour les input
+            $(this).css('border', '1px solid red');//Quand le input n'est pas focus il a une bordure rouge
+          });
         });
       </script>
     </body>
